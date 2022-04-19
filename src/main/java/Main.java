@@ -1,19 +1,18 @@
 import java.awt.*;
 import java.sql.Date;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        byte age=30;
-        long viewsCount = 1_123_456_789L;
-        float price = 30.11F;
-        char letter = 'A';
-        boolean isEligible=false;
+        int [] [] numbers1= {{1,2,3},{4,5,6}};
+        numbers1[0][0]=1;
 
-        byte x = 1;
-        byte y = x;
-        Point point1=new Point(x=1,y=1);
-      Point point2=point1;
-point1.x=2;
-        System.out.println(point2);
+        System.out.println(Arrays.deepToString(numbers1));
+
+        int [] numbers = {2,4,1,5,6};
+        Arrays.sort(numbers);
+        System.out.println(numbers.length);
+
+             System.out.println(Arrays.toString(numbers1));
        }
 }
