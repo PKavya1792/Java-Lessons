@@ -1,18 +1,15 @@
 import java.awt.*;
 import java.sql.Date;
+import java.text.NumberFormat;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int [] [] numbers1= {{1,2,3},{4,5,6}};
-        numbers1[0][0]=1;
 
-        System.out.println(Arrays.deepToString(numbers1));
-
-        int [] numbers = {2,4,1,5,6};
-        Arrays.sort(numbers);
-        System.out.println(numbers.length);
-
-             System.out.println(Arrays.toString(numbers1));
-       }
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Name : ");
+        String name=scanner.nextLine();
+            System.out.println(" you are "+ name);
+                                              }
 }
