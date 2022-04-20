@@ -7,14 +7,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-                    boolean hasGoodIncome=false;
-                    boolean hasCriminalRecord=false;
-                    boolean hasGoodCredit=true;
+                    int income=100000;
 
-                    boolean isEligible=(hasGoodIncome||hasGoodCredit) && !hasCriminalRecord;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Income");
+        int Income= scanner.nextInt();
 
-                System.out.println(isEligible);
+                     if(Income>120000)
+                    System.out.println("true");
+                     else System.out.println("false");
+                       }}
 
-    }
-}
 
