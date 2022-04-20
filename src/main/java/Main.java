@@ -7,15 +7,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-                    int income=100000;
+                     int role=1;
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Income");
-        int Income= scanner.nextInt();
+                     switch (role) {
+                         case 1:
+                             System.out.println("you are admin");
 
-                     if(Income>120000)
-                    System.out.println("true");
-                     else System.out.println("false");
-                       }}
+                         case 2:
+                             System.out.println("moderator");
+
+                         default:
+                             System.out.println("guest");
+                     }}}
+
 
 
